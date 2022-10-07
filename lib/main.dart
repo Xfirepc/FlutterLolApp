@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_trips_app/description_place.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,31 +17,16 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          leading: const Icon(Icons.chevron_left_sharp),
-          title: const Text("Super reto!"),
-        ),
-        body: Stack(children: [
-          const Image(
-            image: AssetImage("assets/images/bg.png"),
-            height: double.infinity,
-            width: double.infinity,
-            fit: BoxFit.cover,
+          appBar: AppBar(
+            leading: const Icon(Icons.chevron_left_sharp),
+            title: const Text("Super reto!"),
           ),
-          Center(
-            child: Container(
-              height: 100,
-              color: const Color.fromRGBO(0, 0, 0, 0.5),
-              child: const Center(
-                child: Text(
-                  "Simon perro!",
-                  style: TextStyle(fontSize: 40, color: Colors.white),
-                ),
-              ),
-            ),
-          )
-        ]),
-      ),
+          body: const DescriptionPlace(
+            namePlace: "Casita del menealo",
+            stars: 4,
+            descriptionPlace:
+                "When mixing relative and absolute imports its possible to create confusion where the same member gets imported in two different ways. An easy way to avoid that is to ensure you have no relative imports that include lib/ in their paths.",
+          )),
     );
   }
 }
