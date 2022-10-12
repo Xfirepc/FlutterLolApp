@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_trips_app/review.dart';
+import 'package:flutter_trips_app/review_list.dart';
 
 class DescriptionPlace extends StatelessWidget {
   final String namePlace;
@@ -70,16 +70,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     return Column(
-      children: [
-        titleStars,
-        description,
-        const Review(
-            avatarImage: 'Assets/images/me.png',
-            name: 'Jose Flores',
-            stars: 4,
-            description: '1 review 5 phtos',
-            comment: 'Esta una bestia, la ostia tio!')
-      ],
+      children: [titleStars, description, const ReviewList()],
     );
   }
 }

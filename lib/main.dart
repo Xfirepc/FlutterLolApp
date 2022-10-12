@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
             title: const Text("Super reto!"),
           ),
           body: const DescriptionPlace(
-            namePlace: "Casita del menealo",
+            namePlace: "Casita 1",
             stars: 4,
             descriptionPlace:
                 "When mixing relative and absolute imports its possible to create confusion where the same member gets imported in two different ways. An easy way to avoid that is to ensure you have no relative imports that include lib/ in their paths.",
