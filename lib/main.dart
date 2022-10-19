@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_trips_app/description_place.dart';
-import 'package:flutter_trips_app/gradient_back.dart';
 import 'package:flutter_trips_app/header_appbar.dart';
 import 'package:flutter_trips_app/review_list.dart';
 
@@ -33,7 +32,7 @@ class MyApp extends StatelessWidget {
                 ReviewList()
               ],
             ),
-            HeaderAppBar()
+            const HeaderAppBar()
           ],
         )));
   }

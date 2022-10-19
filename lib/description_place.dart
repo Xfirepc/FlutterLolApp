@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_trips_app/button.dart';
 import 'package:flutter_trips_app/review_list.dart';
 
 class DescriptionPlace extends StatelessWidget {
@@ -42,7 +43,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final description = Container(
-      margin: const EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 10),
+      margin: const EdgeInsets.only(top: 20, left: 20, right: 20),
       child: Text(
         descriptionPlace,
         style: const TextStyle(
@@ -54,7 +55,8 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     return Column(
-      children: [titleStars, description, const ReviewList()],
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [titleStars, description, const Button('Navigate'), const ReviewList()],
     );
   }
 }
