@@ -14,22 +14,6 @@ class DescriptionPlace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final starHalf = Container(
-      margin: const EdgeInsets.only(top: 323.0, right: 3.0),
-      child: const Icon(
-        Icons.star_half,
-        color: Color(0xFFf2C611),
-      ),
-    );
-
-    final starBorder = Container(
-      margin: const EdgeInsets.only(top: 323.0, right: 3.0),
-      child: const Icon(
-        Icons.star_border,
-        color: Color(0xFFf2C611),
-      ),
-    );
-
     final star = Container(
       margin: const EdgeInsets.only(top: 323.0, right: 3.0),
       child: const Icon(
@@ -58,7 +42,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final description = Container(
-      margin: const EdgeInsets.only(top: 20, left: 20, right: 20),
+      margin: const EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 10),
       child: Text(
         descriptionPlace,
         style: const TextStyle(
