@@ -21,11 +21,12 @@ class Button extends StatelessWidget {
                 stops: [0, 0.6],
                 tileMode: TileMode.clamp)),
         child: Center(
-            child: Text(
-          buttonText,
-          style: const TextStyle(
-              fontSize: 18, fontFamily: 'Lato', color: Colors.white),
-        )),
+          child: Text(
+            buttonText,
+            style: const TextStyle(
+                fontSize: 18, fontFamily: 'Lato', color: Colors.white),
+          )
+        ),
       ),
       onTap: () {
         ScaffoldMessenger.of(context)
