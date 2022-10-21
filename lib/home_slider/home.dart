@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_trips_app/review_list.dart';
+import 'package:flutter_trips_app/home_slider/review_list.dart';
 import 'description_place.dart';
 import 'header_appbar.dart';
 
 class HomeTrips extends StatelessWidget {
+  const HomeTrips({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Stack(

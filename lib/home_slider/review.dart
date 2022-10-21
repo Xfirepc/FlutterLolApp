@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_trips_app/rating.dart';
+import 'package:flutter_trips_app/common/rating.dart';
 
 class Review extends StatelessWidget {
   final String avatarImage;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_trips_app/review.dart';
+import 'package:flutter_trips_app/home_slider/review.dart';
 
 class ReviewList extends StatelessWidget {
   const ReviewList({super.key});

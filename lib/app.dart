@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_trips_app/home_trips.dart';
-import 'package:flutter_trips_app/profile_trips.dart';
-import 'package:flutter_trips_app/serch_trips.dart';
+import 'package:flutter_trips_app/home_slider/home.dart';
+import 'package:flutter_trips_app/profile/profile.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -16,8 +15,7 @@ class _App extends State<App> {
   int indexTab = 0;
 
   final List<Widget> widgetsChildren = [
-    HomeTrips(),
-    const SearchTrips(),
+    const HomeTrips(),
     const ProfileTrips()
   ];
 
@@ -30,25 +28,39 @@ class _App extends State<App> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 20, 31, 41),
+      backgroundColor: const Color.fromARGB(255, 20, 31, 41),
       body: widgetsChildren[indexTab],
-      bottomNavigationBar: Theme(
-        data: Theme.of(context).copyWith(
-          canvasColor: Colors.white,
-          primaryColor: Colors.yellow
+      bottomNavigationBar: Container(
+          margin: const EdgeInsets.only(left: 16, right: 16),
+          padding: const EdgeInsets.only(top: 5),
+          decoration: const BoxDecoration(
+            color: Colors.amber,
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20), topRight: Radius.circular(20)),
+          ),
+          child: BottomNavigationBar(
+            selectedItemColor: const Color.fromARGB(255, 96, 34, 10),
+            backgroundColor: Colors.transparent,
+            showUnselectedLabels: true,
+            onTap: onTapTapped,
+            type: BottomNavigationBarType.fixed,
+            elevation: 0,
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home), 
+                label: 'Home'
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.local_activity), 
+                label: 'Activity'
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.person), 
+                label: 'Profile'
+              ),
+            ],
+          ),
         ),
-        child: BottomNavigationBar(
-          unselectedItemColor: Colors.grey,
-          selectedItemColor: Color.fromARGB(255, 53, 38, 185),
-          onTap: onTapTapped, 
-          currentIndex: indexTab,
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
-          ]
-        )
-      ),
     );
   }
 }

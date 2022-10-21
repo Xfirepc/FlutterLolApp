@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_trips_app/button.dart';
-import 'package:flutter_trips_app/review_list.dart';
+import 'package:flutter_trips_app/common/button.dart';
+import 'package:flutter_trips_app/home_slider/review_list.dart';
 
 class DescriptionPlace extends StatelessWidget {
   final String namePlace;

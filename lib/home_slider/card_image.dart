@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_trips_app/fav_button_card.dart';
+import 'package:flutter_trips_app/common/fav_button_card.dart';
 
 class CardImage extends StatelessWidget {
   final String imagePath;
@@ -25,7 +25,7 @@ class CardImage extends StatelessWidget {
     );
     return Stack(
       alignment: const Alignment(0.9, 1.1),
-      children: [card, FavButtonCard()],
+      children: [card, const FavButtonCard()],
     );
   }
 }
