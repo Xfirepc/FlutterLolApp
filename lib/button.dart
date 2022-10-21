@@ -10,21 +10,26 @@ class Button extends StatelessWidget {
     return InkWell(
       child: Container(
         margin: const EdgeInsets.only(top: 30, left: 20, right: 20, bottom: 10),
-        height: 50,
-        width: 180,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30),
-            gradient: const LinearGradient(
-                colors: [Color(0xFF4268D3), Color(0xFF584CD1)],
-                begin: FractionalOffset(0.2, 0),
-                end: FractionalOffset(1, 0.6),
-                stops: [0, 0.6],
+        height: 40,
+        width: 150,
+        decoration: const BoxDecoration(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(100),
+              bottomRight: Radius.circular(100),
+              topRight: Radius.circular(10),
+              bottomLeft: Radius.circular(10),
+            ),
+            gradient: LinearGradient(
+                colors: [Color(0xff4caf50), Color(0xffff9800)],
+                begin: FractionalOffset(1.5, 1),
+                end: FractionalOffset(0, 4),
+                stops: [0, 1],
                 tileMode: TileMode.clamp)),
         child: Center(
           child: Text(
             buttonText,
             style: const TextStyle(
-                fontSize: 18, fontFamily: 'Lato', color: Colors.white),
+                fontSize: 15, fontFamily: 'Lato', color: Color.fromARGB(255, 20, 31, 41)),
           )
         ),
       ),

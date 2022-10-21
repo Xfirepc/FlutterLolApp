@@ -30,6 +30,7 @@ class _App extends State<App> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 20, 31, 41),
       body: widgetsChildren[indexTab],
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(

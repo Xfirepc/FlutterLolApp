@@ -11,10 +11,9 @@ class HomeTrips extends StatelessWidget {
         ListView(
           children: const [
             DescriptionPlace(
-              namePlace: "Casita 1",
-              stars: 4,
-              descriptionPlace:
-                  "When mixing relative and absolute imports its possible to create confusion where the same member gets imported in two different ways. An easy way to avoid that is to ensure you have no relative imports that include lib/ in their paths.",
+              namePlace: "Lux",
+              stars: 5,
+              descriptionPlace: "Luxanna, o Lux, como prefiere que la llamen, creció en la ciudad demaciana de Meraplata Alta junto a su hermano mayor Garen. Los dos nacieron en el seno de la prestigiosa familia Crownguard, que durante generaciones ha servido como protectora del rey de Demacia. Su abuelo le salvó la vida al rey en la Batalla del Colmillo de la Tormenta y su tía Tianna fue designada comandante del regimiento de élite conocido como la Vanguardia Impertérrita antes de que Lux naciera."
             ),
             ReviewList()
           ],

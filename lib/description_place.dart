@@ -31,9 +31,10 @@ class DescriptionPlace extends StatelessWidget {
             namePlace,
             style: const TextStyle(
                 fontSize: 30.0,
+                color: Color(0xFFf2C611),
                 fontWeight: FontWeight.w900,
                 fontFamily: "Lato"),
-            textAlign: TextAlign.left,
+            textAlign: TextAlign.justify,
           ),
         ),
         Row(
@@ -47,16 +48,18 @@ class DescriptionPlace extends StatelessWidget {
       child: Text(
         descriptionPlace,
         style: const TextStyle(
-            fontSize: 16,
-            fontFamily: "Lato",
-            fontWeight: FontWeight.bold,
-            color: Color(0xFF56575a)),
+          fontSize: 16,
+          fontFamily: "Lato",
+          fontWeight: FontWeight.bold,
+          color: Color.fromARGB(255, 222, 222, 222)
+        ),
+        textAlign: TextAlign.justify,
       ),
     );
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [titleStars, description, const Button('Navigate'), const ReviewList()],
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [titleStars, description, const Button('Leer más'), const ReviewList()],
     );
   }
 }

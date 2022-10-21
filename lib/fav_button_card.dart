@@ -21,7 +21,7 @@ class _FavButtonCard extends State<FavButtonCard> {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      backgroundColor: const Color(0xFF11DA53),
+      backgroundColor: Color.fromARGB(255, 96, 34, 10),
       mini: true,
       tooltip: "Fav",
       onPressed: onPressedFav,
