@@ -15,8 +15,9 @@ class _App extends State<App> {
   int indexTab = 0;
 
   final List<Widget> widgetsChildren = [
-    const HomeTrips(),
-    const ProfileTrips()
+    const Home(),
+    const Profile(),
+    const Profile(),
   ];
 
   void onTapTapped(int index) {

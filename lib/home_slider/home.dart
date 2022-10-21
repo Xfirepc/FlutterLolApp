@@ -3,8 +3,8 @@ import 'package:flutter_trips_app/home_slider/review_list.dart';
 import 'description_place.dart';
 import 'header_appbar.dart';
 
-class HomeTrips extends StatelessWidget {
-  const HomeTrips({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
