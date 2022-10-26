@@ -20,11 +20,15 @@ class Review extends StatelessWidget {
   Widget build(BuildContext context) {
     final userComment = Container(
       margin: const EdgeInsets.only(left: 20),
-      child: Text(
-        comment,
+      child: const Text(
+        '''Lorem ipsum dolor sit amet, consectetur \n adipiscing elit.''',
         textAlign: TextAlign.left,
-        style: const TextStyle(
-            fontFamily: "Lato", fontSize: 13, fontWeight: FontWeight.w700),
+        style: TextStyle(
+          fontFamily: "Lato", 
+          fontSize: 13, 
+          fontWeight: FontWeight.w700,
+          color: Color.fromARGB(255, 215, 215, 215)
+        ),
       ),
     );
 
@@ -46,7 +50,7 @@ class Review extends StatelessWidget {
       child: Text(
         name,
         textAlign: TextAlign.left,
-        style: const TextStyle(fontFamily: "Lato", fontSize: 17),
+        style: const TextStyle(fontFamily: "Lato", fontSize: 17, color: Colors.amber),
       ),
     );
 
@@ -59,9 +63,15 @@ class Review extends StatelessWidget {
       height: 80,
       width: 80,
       margin: const EdgeInsets.only(top: 20, left: 20),
-      child: CircleAvatar(
-        backgroundImage: AssetImage(avatarImage),
-      ),
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.cover,
+              image: NetworkImage(avatarImage)),
+          shape: BoxShape.rectangle,
+          boxShadow: const [
+            BoxShadow(
+                color: Colors.black38, blurRadius: 15, offset: Offset(0, 7))
+          ]),
     );
 
     return Row(children: [avatar, userDetail]);
