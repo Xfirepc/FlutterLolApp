@@ -16,8 +16,8 @@ class _App extends State<App> {
 
   final List<Widget> widgetsChildren = [
     const Home(),
-    const Profile(),
-    const Profile(),
+    Profile(),
+    Profile(),
   ];
 
   void onTapTapped(int index) {

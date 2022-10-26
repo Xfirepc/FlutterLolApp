@@ -7,10 +7,11 @@ class ProfileGradientBack extends StatelessWidget {
   Widget build(BuildContext context) {
     double heightScreen = MediaQuery.of(context).size.height;
     double widthScreen= MediaQuery.of(context).size.width;
+
     return Container(
       clipBehavior: Clip.hardEdge,
       width: widthScreen,
-      height: heightScreen * .5,
+      height: heightScreen * .43,
       decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [

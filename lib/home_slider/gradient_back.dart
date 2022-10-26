@@ -15,8 +15,6 @@ class GradientBack extends StatelessWidget {
           begin: Alignment.bottomRight,
           end: Alignment.topLeft,
         )
-      
-      
       ),
       alignment: const Alignment(-0.8, -0.6),
       child: Text(
