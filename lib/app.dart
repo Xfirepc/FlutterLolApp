@@ -44,16 +44,13 @@ class _App extends State<App> {
             backgroundColor: Colors.transparent,
             showUnselectedLabels: true,
             onTap: onTapTapped,
+            currentIndex: indexTab,
             type: BottomNavigationBarType.fixed,
             elevation: 0,
             items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home), 
                 label: 'Home'
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.local_activity), 
-                label: 'Activity'
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.person), 
