@@ -5,7 +5,7 @@ class ButtonsList extends StatelessWidget {
   @override
   Widget build(Object context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+      padding: EdgeInsets.symmetric(vertical: 10),
       child: Row(children: [
         CircleButton(true, Icons.turned_in_not, 20.0, Color.fromRGBO(255, 255, 255, 0.6)),
         CircleButton(true, Icons.card_travel, 20.0, Color.fromRGBO(255, 255, 255, 0.6)),

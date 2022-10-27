@@ -15,13 +15,17 @@ class CircleButton extends StatefulWidget {
 }
 
 class _CircleButton extends State<CircleButton> {
-  void onPressedBtn() {}
+  final Uri _url = Uri.parse('https://flutter.dev');
+
+  void onPressed() {
+
+  }
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: FloatingActionButton(
-        onPressed: onPressedBtn,
+        onPressed: onPressed,
         mini: widget.mini,
         backgroundColor: widget.color,
         child: Icon(
