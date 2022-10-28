@@ -1,16 +1,50 @@
-# flutter_trips_app
+# Flutter League of Leyends
 
-A new Flutter project.
+Un proyecto personal para poner en práctica mis habilidades aprendidas con Flutter y Dart, usando widgets estaticos y funcionales para crear un diseño elegante con temática del mejor juego del mundo.
 
-## Getting Started
+### Conceptos aprendidos
 
-This project is a starting point for a Flutter application.
+- ListViews
 
-A few resources to get you started if this is your first Flutter project:
+- Containers
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Shadows
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- BottomNavigationBar
+
+- Text & Styles
+
+- Decorations
+
+- Gradients
+
+- FloatingActionButton
+
+- Scaffold & Child
+
+- Muchos más
+
+  
+
+<br/>
+
+### Capturas
+<br/>
+
+<img src="https://i.ibb.co/M5gXSFn/image.png" width="500px">
+
+-----------------
+
+## Como usar
+
+Previamente debes tener instalado flutter en tu ordenador ademas de un dispositivo en el que puedas probar, aquí una guía para instalar [Flutter](https://docs.flutter.dev/get-started/install) después de obtenerlo e instalar una aplicación de pruebas puedes ejecutar:
+
+```sh
+git clone https://github.com/Xfirepc/FlutterLolApp
+cd FlutterLolApp
+flutter run
+```
+
+-----------------
+
+Proyecto desarrollado con el curso de Flutter en @Platzi.
