@@ -31,7 +31,7 @@ Un proyecto personal para poner en práctica mis habilidades aprendidas con Flut
 ### Capturas
 <br/>
 
-<img src="https://i.ibb.co/M5gXSFn/image.png" width="500px">
+<img src="assets/images/p6.png" width="500px">
 
 -----------------
 
